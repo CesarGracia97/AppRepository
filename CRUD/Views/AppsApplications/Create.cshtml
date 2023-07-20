@@ -1,0 +1,43 @@
+﻿@model CRUD.Models.AppsApplication
+
+@{
+    ViewData["Title"] = "Crear App";
+}
+
+<h1>Crear Aplicacion</h1>
+
+<h4>Tabla: AppsApplication</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div id="ctext" class="form-group">
+                <label asp-for="Id" class="control-label">#ID</label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div id="ctext" class="form-group">
+                <label asp-for="NameApplication" class="control-label">Nombre de la aplicacion</label>
+                <input asp-for="NameApplication" class="form-control" />
+                <span asp-validation-for="NameApplication" class="text-danger"></span>
+            </div>
+            <div id="ctext" class="form-group">
+                <label asp-for="DescriptionApplication" class="control-label">Descripcion de la Aplicacion</label>
+                <input asp-for="DescriptionApplication" class="form-control" />
+                <span asp-validation-for="DescriptionApplication" class="text-danger"></span>
+            </div>
+            <div id="btn" class="form-group">
+                <input type="submit" value="Crear" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Regresar...</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,44 @@
+﻿@model CRUD.Models.AppsUser
+
+@{
+    ViewData["Title"] = "Editar Usuarios";
+}
+
+<h1>Editar Usuarios</h1>
+
+<h4>Tabla: AppsUser</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div id="ctext" class="form-group">
+                <label asp-for="AppsUser1" class="control-label">ID A.D.:</label>
+                <input asp-for="AppsUser1" class="form-control" />
+                <span asp-validation-for="AppsUser1" class="text-danger"></span>
+            </div>
+            <div id="ctext" class="form-group">
+                <label asp-for="AppsFullNames" class="control-label">Nombre y Apellido: </label>
+                <input asp-for="AppsFullNames" class="form-control" />
+                <span asp-validation-for="AppsFullNames" class="text-danger"></span>
+            </div>
+            <div id="ctext" class="form-group">
+                <label asp-for="AppsDescritionUser" class="control-label">Rol: </label>
+                <input asp-for="AppsDescritionUser" class="form-control" />
+                <span asp-validation-for="AppsDescritionUser" class="text-danger"></span>
+            </div>
+            <div id="btn" class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Regresar...</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

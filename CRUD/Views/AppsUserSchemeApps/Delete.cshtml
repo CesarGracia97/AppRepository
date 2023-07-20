@@ -1,0 +1,40 @@
+﻿@model CRUD.Models.AppsUserSchemeApp
+
+@{
+    ViewData["Title"] = "Eliminar Usr/Esq/App";
+}
+
+<h1>Eliminar Usr/Esq/App</h1>
+
+<h3>Seguro desea eliminar esta relacion?</h3>
+<div>
+    <h4>Tabla: AppsUserSchemeApp</h4>
+    <hr />
+    <label>Caracteristicas del Registro</label>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdAppsSchemeApps)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdAppsSchemeApps)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdAppsUser)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdAppsUser)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Index">Regresar...</a>
+    </form>
+</div>

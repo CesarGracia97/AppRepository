@@ -1,0 +1,39 @@
+﻿@model CRUD.Models.AppsSchemeApp
+
+@{
+    ViewData["Title"] = "Editar Apps Esquema";
+}
+
+<h1>Editar Aplicaciones Esquema</h1>
+
+<h4>Tabla: AppsSchemeApp</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div id="ctext" class="form-group">
+                <label asp-for="IdAppsScheme" class="control-label">ID Esquema: </label>
+                <input asp-for="IdAppsScheme" class="form-control" />
+                <span asp-validation-for="IdAppsScheme" class="text-danger"></span>
+            </div>
+            <div id="ctext" class="form-group">
+                <label asp-for="IdAppsApps" class="control-label">ID Aplicacion: </label>
+                <input asp-for="IdAppsApps" class="form-control" />
+                <span asp-validation-for="IdAppsApps" class="text-danger"></span>
+            </div>
+            <div id="btn" class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Regresar...</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<CRUD.Models.AppsSchemeApp>
+
+@{
+    ViewData["Title"] = "Aplicaciones de Esquemas";
+}
+
+<h1>Relacion Esquemas/Aplicaciones.</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Crear Esq/App</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdAppsScheme)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdAppsApps)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdAppsScheme)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdAppsApps)
+            </td>
+            <td>
+                <a asp-action="Edit" class="btn btn-warning" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.Id">Elimninar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

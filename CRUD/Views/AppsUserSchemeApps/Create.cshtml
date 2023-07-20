@@ -1,0 +1,43 @@
+﻿@model CRUD.Models.AppsUserSchemeApp
+
+@{
+    ViewData["Title"] = "Crear Relacion Esq/App/Usr";
+}
+
+<h1>Crear Relacion Esq/App/Usr</h1>
+
+<h4>Tabla: AppsUserSchemeApp</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div id="ctext" class="form-group">
+                <label asp-for="Id" class="control-label">#ID</label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div id="ctext" class="form-group">
+                <label asp-for="IdAppsSchemeApps" class="control-label">ID de la Relacion Esq/App</label>
+                <input asp-for="IdAppsSchemeApps" class="form-control" />
+                <span asp-validation-for="IdAppsSchemeApps" class="text-danger"></span>
+            </div>
+            <div id="ctext" class="form-group">
+                <label asp-for="IdAppsUser" class="control-label">Id del Usuario</label>
+                <input asp-for="IdAppsUser" class="form-control" />
+                <span asp-validation-for="IdAppsUser" class="text-danger"></span>
+            </div>
+            <div id="btn" class="form-group">
+                <input type="submit" value="Crear" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Regresar...</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

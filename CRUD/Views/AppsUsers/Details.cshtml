@@ -1,0 +1,36 @@
+﻿@model CRUD.Models.AppsUser
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>AppsUser</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AppsUser1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AppsUser1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AppsFullNames)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AppsFullNames)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AppsDescritionUser)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AppsDescritionUser)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

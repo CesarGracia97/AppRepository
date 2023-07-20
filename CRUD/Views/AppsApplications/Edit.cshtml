@@ -1,0 +1,39 @@
+﻿@model CRUD.Models.AppsApplication
+
+@{
+    ViewData["Title"] = "Editar Apps";
+}
+
+<h1>Editar Aplicaciones</h1>
+
+<h4>Tabla: AppsApplication</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div id="ctext" class="form-group">
+                <label asp-for="NameApplication" class="control-label">Nombre de la Aplicacion: </label>
+                <input asp-for="NameApplication" class="form-control" />
+                <span asp-validation-for="NameApplication" class="text-danger"></span>
+            </div>
+            <div id="ctext" class="form-group">
+                <label asp-for="DescriptionApplication" class="control-label">Descripcion: </label>
+                <input asp-for="DescriptionApplication" class="form-control" />
+                <span asp-validation-for="DescriptionApplication" class="text-danger"></span>
+            </div>
+            <div id="btn" class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Regresar...</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
