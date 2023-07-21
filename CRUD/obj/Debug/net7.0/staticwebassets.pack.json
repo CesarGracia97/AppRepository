@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "E:\\cesar.gracia\\Proyectos\\C#\\CRUD\\CRUD\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CRUD.bundle.scp.css",
-      "PackagePath": "staticwebassets\\CRUD.bundle.scp.css"
-    },
-    {
       "Id": "E:\\cesar.gracia\\Proyectos\\C#\\CRUD\\CRUD\\wwwroot\\css\\Layout_main.css",
       "PackagePath": "staticwebassets\\css\\Layout_main.css"
     },

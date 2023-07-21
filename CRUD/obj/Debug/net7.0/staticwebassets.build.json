@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NhBvFEoUSDYIRpr84pJgTAmHjEO6FCcGn6C36LTfJoQ=",
+  "Hash": "Lglgt0hTE/I7Xq11MgQ3TCkaJKiVxrMrU3Qq4YTLqNA=",
   "Source": "CRUD",
   "BasePath": "_content/CRUD",
   "Mode": "Default",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "E:\\cesar.gracia\\Proyectos\\C#\\CRUD\\CRUD\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CRUD.styles.css",
-      "SourceId": "CRUD",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\cesar.gracia\\Proyectos\\C#\\CRUD\\CRUD\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/CRUD",
-      "RelativePath": "CRUD.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\cesar.gracia\\Proyectos\\C#\\CRUD\\CRUD\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CRUD.styles.css"
-    },
-    {
-      "Identity": "E:\\cesar.gracia\\Proyectos\\C#\\CRUD\\CRUD\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CRUD.bundle.scp.css",
-      "SourceId": "CRUD",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\cesar.gracia\\Proyectos\\C#\\CRUD\\CRUD\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/CRUD",
-      "RelativePath": "CRUD.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\cesar.gracia\\Proyectos\\C#\\CRUD\\CRUD\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CRUD.bundle.scp.css"
-    },
     {
       "Identity": "E:\\cesar.gracia\\Proyectos\\C#\\CRUD\\CRUD\\wwwroot\\css\\Layout_main.css",
       "SourceId": "CRUD",

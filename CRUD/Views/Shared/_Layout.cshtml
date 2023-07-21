@@ -11,14 +11,12 @@
 </head>
 <body>
     <div id="sidebar">
-        <div id="img">
-            <img src="img/603156.png" alt="Logotipo" class="logo">
-        </div>
-        <div class="List-Elements">
-            <ul class="nav-item">
+        <img src="/img/603156.png" alt="Logotipo" class="logo">
+        <div class="lst-btn">
+            <ul class="menu">
                 <li>
-                    <button type="button" class="toggle-button">DB ResetServices</button>
-                    <ul class="sub-menu">
+                    <button type="button" class="toggle-button" onmouseover="showMessage('Base de Datos de Web Applications', event)" onmouseout="hideMessage()">BD - RS</button>
+                    <ul class="sub-menu-1">                        
                         <li><a href="~/AppsUsers/Index">Usuarios</a></li>
                         <li><a href="~/AppsApplications/Index">Aplicaciones</a></li>
                         <li><a href="~/AppsSchemes/Index">Esquemas</a></li>
@@ -27,20 +25,29 @@
                     </ul>
                 </li>
                 <li>
-                    <button type="button" class="toggle-button">APP ResetServices</button>
+                    <button type="button" class="toggle-button" onmouseover="showMessage('Aplicacion Web Applications', event)" onmouseout="hideMessage()">App - RS</button>
+                    <ul class="sub-menu-1">
+                        <li><a href="http://192.168.21.104/WebApplication_operations/index.jsp">Ir a la Pagina</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <button type="button" class="toggle-button">Salud Ocupacional</button>
+                    <button type="button" class="toggle-button" onmouseover="showMessage('COMARCH FSM', event)" onmouseout="hideMessage()">COMARCH FSM</button>
+                    <ul class="sub-menu-1">
+                        <li><a href="http://192.168.21.184:8080/fsm/login.page">Ir a la Pagina</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
     </div>
+
     <div id="contenido">
         @RenderBody()
     </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/Layout.js" asp-append-version="true"></script>
+    <script src="~/js/Layout.js"></script>
+
+    <!--Scripts de la aplicacion-->
     <script src="~/js/ordenamientoTabla.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 

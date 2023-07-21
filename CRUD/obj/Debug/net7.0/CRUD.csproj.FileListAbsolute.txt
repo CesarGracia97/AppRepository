@@ -252,9 +252,7 @@ E:\cesar.gracia\Proyectos\C#\CRUD\CRUD\obj\Debug\net7.0\staticwebassets\msbuild.
 E:\cesar.gracia\Proyectos\C#\CRUD\CRUD\obj\Debug\net7.0\staticwebassets.pack.json
 E:\cesar.gracia\Proyectos\C#\CRUD\CRUD\obj\Debug\net7.0\staticwebassets.build.json
 E:\cesar.gracia\Proyectos\C#\CRUD\CRUD\obj\Debug\net7.0\staticwebassets.development.json
-E:\cesar.gracia\Proyectos\C#\CRUD\CRUD\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 E:\cesar.gracia\Proyectos\C#\CRUD\CRUD\obj\Debug\net7.0\scopedcss\bundle\CRUD.styles.css
-E:\cesar.gracia\Proyectos\C#\CRUD\CRUD\obj\Debug\net7.0\scopedcss\projectbundle\CRUD.bundle.scp.css
 E:\cesar.gracia\Proyectos\C#\CRUD\CRUD\obj\Debug\net7.0\CRUD.csproj.CopyComplete
 E:\cesar.gracia\Proyectos\C#\CRUD\CRUD\obj\Debug\net7.0\CRUD.dll
 E:\cesar.gracia\Proyectos\C#\CRUD\CRUD\obj\Debug\net7.0\refint\CRUD.dll

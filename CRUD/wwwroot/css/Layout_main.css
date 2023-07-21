@@ -1,34 +1,84 @@
-﻿*{
+﻿* ul {
     margin:0;
     padding:0;
+    list-style:none;
 }
-#sidebar{
-    position:fixed;
-    width:300px;
+#sidebar {
+    position: fixed;
+    width: 300px;
     height: 100%;
     background: #151719;
+    justify-content: center;
+    align-items: center;
 }
-
-#sidebar ul li {
-    color: rgba(230, 230, 230, .9);
-    text-align: center;
-    padding: 15px 10px;
-    list-style: none;
-    margin-right: 35px;
-    border-bottom: 1px solid rgba(100, 100, 100, .3);
-    cursor:pointer;
+.logo {
+    border-radius: 50%;
+    display: block;
+    margin: 30px auto;
+    width: 150px;
+    height: 150px;
+}
+.lst-btn{
+    list-style:none;
+    text-align:center;
 }
 
 .toggle-button {
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    padding: 8px;
+    margin:10px 10px 0px 10px;
+    padding:10px 5px 10px 5px;
+    width: 250px; /*tamaño del boton*/
+    cursor: pointer; /*Permite elegirlo*/
+    background-color: transparent; /*Fondo*/
+    border: none;/*los bordes*/
     font-size: 16px;
     color: rgba(230, 230, 230, .9);
+    font-size: 17pt;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
 }
+
+a {
+    text-decoration: none;
+    color: rgba(230, 230, 230, .9);
+    font-size: 10pt;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+/*----------------------------------------------------------------------Links Inicio*/
+/*Link Comarch*/
+.sub-menu-1 li a[href="http://192.168.21.184:8080/fsm/login.page"] {
+    text-decoration: none;
+    color: rgba(230, 230, 230, .9);
+}
+.sub-menu-1 li a[href="http://192.168.21.184:8080/fsm/login.page"]:hover {
+    color: #007bff;    
+}
+/*Link Aplicaciones RS*/
+.sub-menu-1 li a[href="http://192.168.21.104/WebApplication_operations/index.jsp"] {
+    text-decoration: none;
+    color: rgba(230, 230, 230, .9);
+}
+.sub-menu-1 li a[href="http://192.168.21.104/WebApplication_operations/index.jsp"]:hover {
+    color: #007bff;    
+}
+/*----------------------------------------------------------------------Links Fin*/
+
+/*-----------------------------------------------------Inicio Mensajes Emergentes*/
+.popup {
+    position: absolute;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 9999;
+}
+/*-----------------------------------------------------Fin Mensajes Emergentes*/
+
 #sub-menu {
-    text-align:center;
+    text-align: center;
     display: none;
     list-style: none;
     padding: 0;
@@ -39,6 +89,7 @@
     display: block;
     animation: slide-down 0.5s ease;
 }
+
 @keyframes slide-down {
     from {
         opacity: 0;
@@ -50,27 +101,12 @@
         transform: translateY(0);
     }
 }
-a{
-    text-decoration: none;
-    color: rgba(230, 230, 230, .9);
-}
-a:hover {
-    color: #007bff;
-}
-
-.logo {
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    width: 150px;
-    height: 150px;
-}
 
 #contenido {
     flex-grow: 1;
     margin-left: 300px;
     padding-left: 15px;
-    padding-right:15px;
+    padding-right: 15px;
 }
 
 /*Responsive Pantallas medianas*/
@@ -89,7 +125,6 @@ a:hover {
         height: 75px;
     }
 }
-
 /* Estilos para pantallas pequeñas */
 @media (max-width: 576px) {
     #sidebar{
@@ -115,4 +150,3 @@ a:hover {
         height: 60px;
     }
 }
-
